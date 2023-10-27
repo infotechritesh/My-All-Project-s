@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CS School </title>
+    <link rel="shortcut icon" href="images/1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>CS <span style="color: red;">School</span></h1>
+        </div>
+        <ul>
+            <li onclick="home()">Home</li>
+            <li onclick="Course()">Courses</li>
+            <li>Resources</li>
+            <li>Blog's</li>
+        </ul>
+        <div class="ex">
+            <a href="#" id="sign">Sign Up</a>
+            <a href="#">Log In</a>
+        </div>
+    </nav>
+
+    <main id="main">
+        <div class="slider">
+            <div class="slides">
+                <img src="https://lindastade.com/wp-content/uploads/2019/03/shutterstock_102482084-e1552480105382.jpg"
+                    alt="">
+                <div class="descri">
+                    <h3> Computer Science </h3>
+                    <p>In This Course To Make ME to All people are Study Given Your programming skill's to develope and
+                        choise your carreir bacome to start those line in computer science study department ! .
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ad dolorum eos totam itaque ipsam
+                        tenetur praesentium aut eligendi nam vero molestiae voluptas officia provident vitae, distinctio
+                        placeat consectetur beatae!</p>
+
+                    <button> Explore Courses</button>
+                    <button> Start Now </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Top Companies Section struture Design -->
+
+    <section class="companies" id="com">
+        <h3>Trusted by over 14,400 companies and millions of learners around the world</h3>
+        <div class="images">
+            <img src="https://s.udemycdn.com/partner-logos/ou-v1/volkswagen.svg" alt="">
+            <img src="https://s.udemycdn.com/partner-logos/ou-v1/samsung.svg" alt="">
+            <img src="https://s.udemycdn.com/partner-logos/ou-v1/cisco.svg" alt="">
+            <img src="https://s.udemycdn.com/partner-logos/ou-v1/att.svg" alt="">
+            <img src="https://s.udemycdn.com/partner-logos/ou-v1/procter_gamble.svg" alt="">
+            <img src="https://s.udemycdn.com/partner-logos/ou-v1/hewlett_packard_enterprise.svg" alt="">
+            <img src="https://s.udemycdn.com/partner-logos/ou-v1/ericsson.svg" alt="">
+        </div>
+    </section>
+
+    <section class="courses" id="co">
+        <h1> Purchase Courses </h1>
+        <div class="co-headtitle">
+            <h3> Top Populer Courses </h3>
+        </div>
+        <div class="co-content">
+            <div class="co-card">
+                <img src="images/full stack.jpg" alt="">
+                <p id="co-title"> The Complete Full Stack Development Course By Cs School For everyone's learn about
+                    matter's </p>
+                <p id="co-author"><img src="images/1.jpg" alt=""> By Ritesh Thakare</p>
+                <p id="co-review">4.7 <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'
+                        style='color:#0e0e0e'></i> <span id="user-review">(159,566)</span></p>
+                <div class="co-addcart">
+                    <p id="co-purchase">$ <span id="co-value">25,000</span></p>
+                    <button id="cartbtn" onclick="co()"><i class='bx bxs-cart'></i></button>
+                </div>
+            </div>
+            <div class="co-card">
+                <img src="images/android.jpg" alt="">
+                <p id="co-title"> The Complete Android Development Course By Cs School For everyone's learn about
+                    matter's with doubt solve and big project's work !</p>
+                <p id="co-author"><img src="images/1.jpg" alt=""> By Nishant Rana</p>
+                <p id="co-review">4.7 <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'
+                        style='color:#0e0e0e'></i> <span id="user-review">(159,566)</span></p>
+                <div class="co-addcart">
+                    <p id="co-purchase">$ <span id="co-value">40,000</span></p>
+                    <button id="cartbtn" onclick="top1(),co()"><i class='bx bxs-cart'></i></button>
+                </div>
+            </div>
+            <div class="co-card">
+                <img src="images/data.webp" alt="">
+                <p id="co-title"> The Complete Full Data Analysis Learn with Development Course By Cs School For
+                    everyone's learn about matter's </p>
+                <p id="co-author"><img src="images/1.jpg" alt=""> By Advani Komal </p>
+                <p id="co-review">4.7 <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'
+                        style='color:#0e0e0e'></i> <span id="user-review">(159,566)</span></p>
+                <div class="co-addcart">
+                    <p id="co-purchase">$ <span id="co-value">80,000</span></p>
+                    <button id="cartbtn" onclick="top2(),co()"><i class='bx bxs-cart'></i></button>
+                </div>
+            </div>
+            <div class="co-card">
+                <img src="images/aiml.png" alt="">
+                <p id="co-title"> The Complete Full Data Analysis Learn with Development Course By Cs School For
+                    everyone's learn about matter's </p>
+                <p id="co-author"><img src="images/1.jpg" alt=""> By Jay Sharma </p>
+                <p id="co-review">4.7 <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'
+                        style='color:#0e0e0e'></i> <span id="user-review">(159,566)</span></p>
+                <div class="co-addcart">
+                    <p id="co-purchase">$ <span id="co-value">2,50,000</span></p>
+                    <button id="cartbtn" onclick="top3(),co()"><i class='bx bxs-cart'></i></button>
+                </div>
+            </div>
+            <div class="co-card">
+                <img src="images/mern.webp" alt="">
+                <p id="co-title"> The Complete MongoDB , Express.js , React.js and Node.js ( M.E.R.N ) Course By Cs
+                    School For
+                    everyone's learn about matter's </p>
+                <p id="co-author"><img src="images/1.jpg" alt=""> By Jay Sharma </p>
+                <p id="co-review">4.7 <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'
+                        style='color:#0e0e0e'></i> <span id="user-review">(159,566)</span></p>
+                <div class="co-addcart">
+                    <p id="co-purchase">$ <span id="co-value">10,000</span></p>
+                    <button id="cartbtn" onclick="top4(),co()"><i class='bx bxs-cart'></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="courses" id="co-pro">
+        <h1> Purchase Courses </h1>
+        <div class="co-headtitle">
+            <h3> Programmer Course's </h3>
+        </div>
+        <div class="co-content">
+            <div class="co-card">
+                <img src="images/c++.jpg" alt="">
+                <p id="co-title"> The Complete C++ Basic To High Level programming skill developement Course By Cs
+                    School For everyone's learn about
+                    matter's </p>
+                <p id="co-author"><img src="images/1.jpg" alt=""> By Ritesh Thakare</p>
+                <p id="co-review">4.7 <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'
+                        style='color:#0e0e0e'></i> <span id="user-review">(159,566)</span></p>
+                <div class="co-addcart">
+                    <p id="co-purchase">$ <span id="co-value">899</span></p>
+                    <button id="cartbtn" onclick="co(),pro1()"><i class='bx bxs-cart'></i></button>
+                </div>
+            </div>
+            <div class="co-card">
+                <img src="images/java.jpg" alt="">
+                <p id="co-title"> The Complete Java Programming Language Course By Cs School For everyone's learn about
+                    matter's with doubt solve and big project's work !</p>
+                <p id="co-author"><img src="images/1.jpg" alt=""> By Nishant Rana</p>
+                <p id="co-review">4.7 <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'
+                        style='color:#0e0e0e'></i> <span id="user-review">(159,566)</span></p>
+                <div class="co-addcart">
+                    <p id="co-purchase">$ <span id="co-value">899</span></p>
+                    <button id="cartbtn" onclick="co(),pro2()"><i class='bx bxs-cart'></i></button>
+                </div>
+            </div>
+            <div class="co-card">
+                <img src="images/javascript.jpeg" alt="">
+                <p id="co-title"> The Complete Full Javascript Basic To Advanced Level with Core Javascript Course By Cs
+                    School For
+                    everyone's learn about matter's </p>
+                <p id="co-author"><img src="images/1.jpg" alt=""> By Advani Komal </p>
+                <p id="co-review">4.7 <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'
+                        style='color:#0e0e0e'></i> <span id="user-review">(159,566)</span></p>
+                <div class="co-addcart">
+                    <p id="co-purchase">$ <span id="co-value">899</span></p>
+                    <button id="cartbtn" onclick="co(),pro3()"><i class='bx bxs-cart'></i></button>
+                </div>
+            </div>
+            <div class="co-card">
+                <img src="images/python.jpg" alt="">
+                <p id="co-title"> The Complete Python Programming Course By Cs School For
+                    everyone's learn about matter's </p>
+                <p id="co-author"><img src="images/1.jpg" alt=""> By Jay Sharma </p>
+                <p id="co-review">4.7 <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'
+                        style='color:#0e0e0e'></i> <span id="user-review">(159,566)</span></p>
+                <div class="co-addcart">
+                    <p id="co-purchase">$ <span id="co-value">899</span></p>
+                    <button id="cartbtn" onclick="co(),pro4()"><i class='bx bxs-cart'></i></button>
+                </div>
+            </div>
+            <div class="co-card">
+                <img src="images/php.jpg" alt="">
+                <p id="co-title"> The Complete Full php Course By Cs School For
+                    everyone's learn about matter's </p>
+                <p id="co-author"><img src="images/1.jpg" alt=""> By Jay Sharma </p>
+                <p id="co-review">4.7 <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'
+                        style='color:#0e0e0e'></i> <span id="user-review">(159,566)</span></p>
+                <div class="co-addcart">
+                    <p id="co-purchase">$ <span id="co-value">899</span></p>
+                    <button id="cartbtn" onclick="co(),pro5()"><i class='bx bxs-cart'></i></button>
+                </div>
+            </div>
+            <div class="co-card">
+                <img src="images/english.png" alt="">
+                <p id="co-title"> The Complete Full English With Better Comminication Skill's and day by day training
+                    every one group to speak english Course By Cs School For
+                    everyone's . </p>
+                <p id="co-author"><img src="images/1.jpg" alt=""> By Jay Sharma </p>
+                <p id="co-review">4.7 <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'
+                        style='color:#0e0e0e'></i> <span id="user-review">(159,566)</span></p>
+                <div class="co-addcart">
+                    <p id="co-purchase">$ <span id="co-value">899</span></p>
+                    <button id="cartbtn" onclick="co(),pro6()"><i class='bx bxs-cart'></i></button>
+                </div>
+            </div>
+            <div class="co-card">
+                <img src="images/os.jpg" alt="">
+                <p id="co-title"> The Complete Full Operating System ( OS ) With Basics To advanced Course By Cs School
+                    For
+                    everyone's learn about matter's </p>
+                <p id="co-author"><img src="images/1.jpg" alt=""> By Jay Sharma </p>
+                <p id="co-review">4.7 <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'
+                        style='color:#0e0e0e'></i> <span id="user-review">(159,566)</span></p>
+                <div class="co-addcart">
+                    <p id="co-purchase">$ <span id="co-value">899</span></p>
+                    <button id="cartbtn" onclick="co(),pro7()"><i class='bx bxs-cart'></i></button>
+                </div>
+            </div>
+            <div class="co-card">
+                <img src="images/flask.jpg" alt="">
+                <p id="co-title"> The Complete Full Flask Web Framework in Python use in web Development By Cs School
+                    For
+                    everyone's learn about matter's </p>
+                <p id="co-author"><img src="images/1.jpg" alt=""> By Jay Sharma </p>
+                <p id="co-review">4.7 <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'
+                        style='color:#0e0e0e'></i> <span id="user-review">(159,566)</span></p>
+                <div class="co-addcart">
+                    <p id="co-purchase">$ <span id="co-value">899</span></p>
+                    <button id="cartbtn" onclick="co(),pro8()"><i class='bx bxs-cart'></i></button>
+                </div>
+            </div>
+            <div class="co-card">
+                <img src="images/fosd.jpg" alt="">
+                <p id="co-title"> The Complete Full Fundamental Of Software Development Course By Cs School For
+                    everyone's learn about matter's </p>
+                <p id="co-author"><img src="images/1.jpg" alt=""> By Jay Sharma </p>
+                <p id="co-review">4.7 <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'
+                        style='color:#0e0e0e'></i> <span id="user-review">(159,566)</span></p>
+                <div class="co-addcart">
+                    <p id="co-purchase">$ <span id="co-value">899</span></p>
+                    <button id="cartbtn" onclick="co(),pro9()"><i class='bx bxs-cart'></i></button>
+                </div>
+            </div>
+            <div class="co-card">
+                <img src="images/sql.webp" alt="">
+                <p id="co-title"> The Complete Full Structure queiry Language ( SQL ) with create Database System in web
+                    Development By Cs School For
+                    everyone's learn about matter's </p>
+                <p id="co-author"><img src="images/1.jpg" alt=""> By Jay Sharma </p>
+                <p id="co-review">4.7 <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'
+                        style='color:#0e0e0e'></i> <span id="user-review">(159,566)</span></p>
+                <div class="co-addcart">
+                    <p id="co-purchase">$ <span id="co-value">899</span></p>
+                    <button id="cartbtn" onclick="co(),pro10()"><i class='bx bxs-cart'></i></button>
+                </div>
+            </div>
+            <div class="co-card">
+                <img src="images/react.jpg" alt="">
+                <p id="co-title"> The Complete Full React Js Framework for Frontend developer's Course By Cs School For
+                    everyone's learn about matter's </p>
+                <p id="co-author"><img src="images/1.jpg" alt=""> By Jay Sharma </p>
+                <p id="co-review">4.7 <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                        class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'
+                        style='color:#0e0e0e'></i> <span id="user-review">(159,566)</span></p>
+                <div class="co-addcart">
+                    <p id="co-purchase">$ <span id="co-value">899</span></p>
+                    <button id="cartbtn" onclick="co(),pro11()"><i class='bx bxs-cart'></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Our Student's Page Sections's -->
+    <section class="students" id="students">
+        <h3 style="font-size: 35px; font-weight: 800; text-align: center;"> Our Student's </h3>
+        <br><br><br>
+        <div class="std-wrapper">
+            <div class="std-card">
+                <div class="top">
+                    <img src="images/user.jpeg" alt=""
+                        id="user-picture" style="border-radius: 50%;">
+                    <div class="com-intro">
+                        <img id="companies-logo"
+                            src="http://orig10.deviantart.net/6d95/f/2015/247/b/9/google_2015_logo_high_resolution_png_by_jovicasmileski-d98chn1.png"
+                            alt=""><br>
+                    </div>
+                </div>
+                <div class="std-intro">
+                    <p>Name : <span id="std-name">Herry Potter</span></p>
+                    <p>Course : <span id="std-co"> Full-Stack Development</span></p>
+                    <p>Branch: <span id="std-brach">IT</span></p>
+                    <p>Degree : <span id="sta-degree">B.Tech</span></p>
+                    <p>Salary : <span id="sta-degree">Rs 3.5 Lakh / Month </span></p>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="top">
+                    <img src="images/user.jpeg" alt=""
+                        id="user-picture" style="border-radius: 50%;">
+                    <div class="com-intro">
+                        <img id="companies-logo" src="https://pngimg.com/uploads/amazon/amazon_PNG24.png" alt=""><br>
+                    </div>
+                </div>
+                <div class="std-intro">
+                    <p>Name : <span id="std-name">Herry Potter</span></p>
+                    <p>Course : <span id="std-co"> Full-Stack Development</span></p>
+                    <p>Branch: <span id="std-brach">IT</span></p>
+                    <p>Degree : <span id="sta-degree">B.Tech</span></p>
+                    <p>Salary : <span id="sta-degree">Rs 3.5 Lakh / Month </span></p>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="top">
+                    <img src="images/user.jpeg" alt=""
+                        id="user-picture" style="border-radius: 50%;">
+                    <div class="com-intro">
+                        <img id="companies-logo"
+                            src="https://1000marcas.net/wp-content/uploads/2021/06/Flipkart-logo-800x450.png"
+                            alt=""><br>
+                    </div>
+                </div>
+                <div class="std-intro">
+                    <p>Name : <span id="std-name">Herry Potter</span></p>
+                    <p>Course : <span id="std-co"> Full-Stack Development</span></p>
+                    <p>Branch: <span id="std-brach">IT</span></p>
+                    <p>Degree : <span id="sta-degree">B.Tech</span></p>
+                    <p>Salary : <span id="sta-degree">Rs 3.5 Lakh / Month </span></p>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="top">
+                    <img src="images/user.jpeg" alt=""
+                        id="user-picture" style="border-radius: 50%;">
+                    <div class="com-intro">
+                        <img id="companies-logo"
+                            src="https://1000marcas.net/wp-content/uploads/2021/06/Flipkart-logo-800x450.png"
+                            alt=""><br>
+                    </div>
+                </div>
+                <div class="std-intro">
+                    <p>Name : <span id="std-name">Herry Potter</span></p>
+                    <p>Course : <span id="std-co"> Full-Stack Development</span></p>
+                    <p>Branch: <span id="std-brach">IT</span></p>
+                    <p>Degree : <span id="sta-degree">B.Tech</span></p>
+                    <p>Salary : <span id="sta-degree">Rs 3.5 Lakh / Month </span></p>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="top">
+                    <img src="images/user.jpeg" alt=""
+                        id="user-picture" style="border-radius: 50%;">
+                    <div class="com-intro">
+                        <img id="companies-logo"
+                            src="http://www.pngmart.com/files/4/Microsoft-Logo-Transparent-Background.png" alt=""><br>
+                    </div>
+                </div>
+                <div class="std-intro">
+                    <p>Name : <span id="std-name">Herry Potter</span></p>
+                    <p>Course : <span id="std-co"> Full-Stack Development</span></p>
+                    <p>Branch: <span id="std-brach">IT</span></p>
+                    <p>Degree : <span id="sta-degree">B.Tech</span></p>
+                    <p>Salary : <span id="sta-degree">Rs 3.5 Lakh / Month </span></p>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="top">
+                    <img src="images/user.jpeg" alt=""
+                        id="user-picture" style="border-radius: 50%;">
+                    <div class="com-intro">
+                        <img id="companies-logo"
+                            src="http://orig10.deviantart.net/6d95/f/2015/247/b/9/google_2015_logo_high_resolution_png_by_jovicasmileski-d98chn1.png"
+                            alt=""><br>
+                    </div>
+                </div>
+                <div class="std-intro">
+                    <p>Name : <span id="std-name">Herry Potter</span></p>
+                    <p>Course : <span id="std-co"> Full-Stack Development</span></p>
+                    <p>Branch: <span id="std-brach">IT</span></p>
+                    <p>Degree : <span id="sta-degree">B.Tech</span></p>
+                    <p>Salary : <span id="sta-degree">Rs 3.5 Lakh / Month </span></p>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="top">
+                    <img src="images/user.jpeg" alt=""
+                        id="user-picture" style="border-radius: 50%;">
+                    <div class="com-intro">
+                        <img id="companies-logo"
+                            src="http://www.pngmart.com/files/4/Microsoft-Logo-Transparent-Background.png" alt=""><br>
+                    </div>
+                </div>
+                <div class="std-intro">
+                    <p>Name : <span id="std-name">Herry Potter</span></p>
+                    <p>Course : <span id="std-co"> Full-Stack Development</span></p>
+                    <p>Branch: <span id="std-brach">IT</span></p>
+                    <p>Degree : <span id="sta-degree">B.Tech</span></p>
+                    <p>Salary : <span id="sta-degree">Rs 3.5 Lakh / Month </span></p>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="top">
+                    <img src="images/user.jpeg" alt=""
+                        id="user-picture" style="border-radius: 50%;">
+                    <div class="com-intro">
+                        <img id="companies-logo"
+                            src="https://1000marcas.net/wp-content/uploads/2021/06/Flipkart-logo-800x450.png"
+                            alt=""><br>
+                    </div>
+                </div>
+                <div class="std-intro">
+                    <p>Name : <span id="std-name">Herry Potter</span></p>
+                    <p>Course : <span id="std-co"> Full-Stack Development</span></p>
+                    <p>Branch: <span id="std-brach">IT</span></p>
+                    <p>Degree : <span id="sta-degree">B.Tech</span></p>
+                    <p>Salary : <span id="sta-degree">Rs 3.5 Lakh / Month </span></p>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="top">
+                    <img src="images/user.jpeg" alt=""
+                        id="user-picture" style="border-radius: 50%;">
+                    <div class="com-intro">
+                        <img id="companies-logo"
+                            src="http://orig10.deviantart.net/6d95/f/2015/247/b/9/google_2015_logo_high_resolution_png_by_jovicasmileski-d98chn1.png"
+                            alt=""><br>
+                    </div>
+                </div>
+                <div class="std-intro">
+                    <p>Name : <span id="std-name">Herry Potter</span></p>
+                    <p>Course : <span id="std-co"> Full-Stack Development</span></p>
+                    <p>Branch: <span id="std-brach">IT</span></p>
+                    <p>Degree : <span id="sta-degree">B.Tech</span></p>
+                    <p>Salary : <span id="sta-degree">Rs 3.5 Lakh / Month </span></p>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="top">
+                    <img src="images/user.jpeg" alt=""
+                        id="user-picture" style="border-radius: 50%;">
+                    <div class="com-intro">
+                        <img id="companies-logo" src="https://www.guiadocftv.com.br/wp-content/uploads/2022/02/1-20.png"
+                            alt=""><br>
+                    </div>
+                </div>
+                <div class="std-intro">
+                    <p>Name : <span id="std-name">Herry Potter</span></p>
+                    <p>Course : <span id="std-co"> Full-Stack Development</span></p>
+                    <p>Branch: <span id="std-brach">IT</span></p>
+                    <p>Degree : <span id="sta-degree">B.Tech</span></p>
+                    <p>Salary : <span id="sta-degree">Rs 3.5 Lakh / Month </span></p>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="top">
+                    <img src="images/user.jpeg" alt=""
+                        id="user-picture" style="border-radius: 50%;">
+                    <div class="com-intro">
+                        <img id="companies-logo"
+                            src="http://www.pngmart.com/files/4/Microsoft-Logo-Transparent-Background.png" alt=""><br>
+                    </div>
+                </div>
+                <div class="std-intro">
+                    <p>Name : <span id="std-name">Herry Potter</span></p>
+                    <p>Course : <span id="std-co"> Full-Stack Development</span></p>
+                    <p>Branch: <span id="std-brach">IT</span></p>
+                    <p>Degree : <span id="sta-degree">B.Tech</span></p>
+                    <p>Salary : <span id="sta-degree">Rs 3.5 Lakh / Month </span></p>
+                </div>
+            </div>
+            <div class="std-card">
+                <div class="top">
+                    <img src="images/user.jpeg" alt=""
+                        id="user-picture" style="border-radius: 50%;">
+                    <div class="com-intro">
+                        <img id="companies-logo"
+                            src="https://1000marcas.net/wp-content/uploads/2021/06/Flipkart-logo-800x450.png"
+                            alt=""><br>
+                    </div>
+                </div>
+                <div class="std-intro">
+                    <p>Name : <span id="std-name">Herry Potter</span></p>
+                    <p>Course : <span id="std-co"> Full-Stack Development</span></p>
+                    <p>Branch: <span id="std-brach">IT</span></p>
+                    <p>Degree : <span id="sta-degree">B.Tech</span></p>
+                    <p>Salary : <span id="sta-degree">Rs 3.5 Lakh / Month </span></p>
+                </div>
+            </div>
+        </div>
+        <button id="see_more">See More</button>
+    </section>
+
+
+    <div class="co-pay-container" id="co-pay">
+        <div class="pay-content">
+            <div class="left">
+                <h3>Your Choise </h3>
+                <h1 id="co-name"> Full Stack Web Development </h1>
+                <p id="co-descri"> In This We Are learn about web developmetn in fronted , backend with Big Project's
+                    and Learn What matter's !</p>
+            </div>
+            <div class="right-box">
+                <form action="#">
+                    <h3 id="#">Complate Purchase</h3><br>
+                    <hr><br><br>
+                    <div class="pay-value">
+                        <p id="rupee"> Rupees <span id="ruppee-value">25,000</span></p>
+                    </div>
+                    <input type="email" placeholder="Enter Email Address">
+                    <input type="text" placeholder="Enter Mobile Number">
+                    <input type="text" placeholder="Enter Full Name"><br>
+                    <button onclick="load()">Pay Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loader For Payment Processes -->
+    <br><br><br><br><br><br><br><br><br>
+    <section class="pay-process" id="pay-process">
+        <div class="process-box" id="process-box"></div>
+
+        <h1 id="pay-pro-content">Processesing </h1>
+
+        <div class="pay-btn">
+            <button onclick="CancelPay()" id="canlpay">Cancel Payment</button><br>
+            <button onclick="ContinuiePay()" id="conpay">Continue Payment</button>
+        </div>
+    </section>
+
+
+    <section class="co-founder" id="founder">
+        <img src="images/1.jpg" alt="">
+        <h3>RITESH THAKARE</h3>
+        <div class="skills">
+            <div class="sk-card">
+                <h1>CS <span style="color: red;">School</span></h1><br>
+                <p>CO-Founder , CS School</p>
+            </div>
+            <div class="sk-card">
+                <h2>Skills</h2><br>
+                <ul>
+                    <li>Full-Stack Developer</li>
+                    <li>Software Engineer , Developer </li>
+                    <li>Data Scientists</li>
+                    <li>Computer Programmer</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="intro">
+                <h1>CS <span style="color: red;">School</span></h1>
+                <p>India's most Loved Coding and Programmer Comminity !
+                    Admission Now .
+                </p>
+            </div>
+            <ul>
+                <li>Courses</li>
+                <li>Tutorials</li>
+                <li>Privacy</li>
+                <li>Term & Condition </li>
+            </ul>
+            <ul>
+                <li>abcd@gmail.com</li>
+                <li>Contact Us</li>
+                <li>Studies</li>
+                <li>College</li>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul>
+                <li id="author"> <span style="color: red;">D</span>eveloped By <span style="color: red;">R</span>itesh
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- javascript File's -->
+    <script src="main.js"></script>
+
+    <script src="co.js"></script>
+</body>
+
+</html>

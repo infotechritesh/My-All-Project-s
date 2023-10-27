@@ -1,0 +1,822 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: rgba(22, 22, 23, 0.902);
+    position: fixed;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 99;
+}
+
+ul {
+    display: flex;
+    padding: 10px;
+}
+
+ul li {
+    margin-left: 20px;
+    font-size: 13px;
+    list-style: none;
+    padding: 5px;
+    color: rgb(228, 224, 224);
+    user-select: none;
+}
+
+ul li:hover {
+    color: white;
+}
+
+ul li i {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+    color: white;
+}
+
+
+/* Container Design */
+.container {
+    background: url('images/iphone media.jpeg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-size: calc(50%, 20%);
+    height: 100vh;
+}
+
+.container .container-title {
+    padding: 2px;
+    width: 100%;
+    height: 30%;
+
+}
+
+.container .container-title h1 {
+    color: white;
+    margin-top: 5%;
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container .container-title h4 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.container .links {
+    display: flex;
+    width: 100%;
+    color: blue;
+    justify-content: center;
+}
+
+.container .links a {
+    color: blue;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 60px;
+    position: relative;
+    transition: all ease 0.2s;
+}
+
+.container .links a i {
+    margin-top: 6px;
+}
+
+.container .links a::after {
+    content: "";
+    left: 0;
+    bottom: -10px;
+    height: 3px;
+    background-color: white;
+    width: 0;
+    position: absolute;
+    transition: all ease 0.2s;
+}
+
+.container .links a:hover {
+    opacity: 1;
+    transform: scale(1)
+}
+
+.container .links a:hover::after {
+    width: 100%;
+}
+
+/* 2 */
+.con-2 {
+    margin-top: 20px;
+    background: url('images/1.jpg') no-repeat;
+    background-size: cover;
+}
+
+
+/* 3 */
+.con-3 {
+    background: url('images/watches.jpg') no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+}
+
+
+/* 4 */
+.con-4 {
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.con-4 .container-more-content {
+    width: 48%;
+    height: 80%;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.con-4 .container-more-content h1 {
+    font-size: 45px;
+    margin-top: 280px;
+}
+
+.con-4 .container-more-content h4 {
+    font-size: 25px;
+    color: rgb(253, 248, 248);
+    margin-top: 10px;
+}
+
+.con-4 .container-more-content .links {
+    margin-top: 30%;
+}
+
+.con-4 .con-m-1 {
+    background: url('images/airpods.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.con-4 .con-m-2 {
+    background: url('images/apple-vision-pro.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.con-4 .con-m-3 {
+    background: url('images/macbook.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.con-4 .con-m-4 {
+    background: url('images/ipads.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.con-4 .con-m-5 {
+    background: url('images/tradein.webp') no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.con-4 .con-m-6 {
+    background: url('images/card.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+#card-app {
+    color: black;
+}
+
+.con-4 .con-m-5 h1,
+.con-4 .con-m-6 h1,
+.con-4 .con-m-5 h4,
+.con-4 .con-m-6 h4,
+.con-4 .con-m-5 h1 i,
+.con-4 .con-m-6 h1 i {
+    color: black;
+}
+
+.con-4 .con-m-5 h4,
+.con-4 .con-m-6 h4 {
+    font-size: 20px;
+}
+
+.con-4 .con-m-5 .links a:hover::after,
+.con-4 .con-m-6 .links a:hover::after {
+    background-color: black;
+}
+
+footer {
+    width: 100%;
+    height: 50vh;
+    padding: 10px;
+    margin-top: 80%;
+    justify-content: center;
+}
+
+footer .blocks {
+    display: flex;
+    width: 80%;
+    margin-left: 13%;
+
+}
+
+footer .block {
+    padding: 2px;
+    width: 12%;
+    height: 50vh;
+    margin-left: 5%;
+}
+
+#block-title {
+    font-size: 13px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+#block-sub-title {
+    color: rgb(94, 92, 92);
+    font-size: 12px;
+    padding: 6px;
+}
+
+#block-sub-title:hover {
+    text-decoration: underline;
+}
+
+.foot-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foot-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foot-nav ul li {
+    color: rgb(67, 66, 66);
+}
+
+.foot-nav ul li:hover {
+    text-decoration: underline;
+}
+
+#copy {
+    margin-top: 13px;
+    font-size: 13px;
+    color: rgb(94, 92, 92);
+}
+
+.foot-nav ul span {
+    height: 30px;
+    width: 1%;
+    border-right: 1px solid black;
+}
+
+@media (max-width: 1260px) {
+    footer {
+        margin-top: 85%;
+    }
+
+    footer .blocks {
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+
+    }
+
+    footer .block {
+        padding: 2px;
+        width: 12%;
+        height: 50vh;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 1200px) {
+    footer {
+        margin-top: 90%;
+    }
+
+    .foot-nav {
+        display: flex;
+    }
+}
+
+@media (max-width: 1120px) {
+    footer {
+        margin-top: 95%;
+    }
+}
+
+@media (max-width: 1070px) {
+    footer {
+        margin-top: 98%;
+    }
+
+    #block-title {
+        font-size: 13px;
+        color: black;
+        margin-bottom: 10px;
+    }
+
+    #block-sub-title {
+        color: rgb(94, 92, 92);
+        font-size: 10px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 1040px) {
+    footer {
+        margin-top: 100%;
+    }
+
+    footer .blocks {
+        display: none;
+        width: 100%;
+
+    }
+
+    footer .block {
+        padding: 2px;
+        width: 100%;
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .con-4 {
+        background: white;
+        display: block;
+        flex-direction: column;
+    }
+
+    .con-4 .container-more-content {
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    footer {
+        margin-top: 360%;
+    }
+
+    .container .container-title h1 {
+        color: white;
+        margin-top: 35%;
+        font-size: 85px;
+    }
+
+    .container .container-title h4 {
+        font-size: 33px;
+        font-weight: 600;
+    }
+
+    .container .links {
+        display: flex;
+        width: 100%;
+        color: blue;
+        margin-top: 40%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 910px) {
+    #i {
+        display: none;
+    }
+
+    .logo {
+        margin-right: 450%;
+        margin-left: 60%;
+        font-weight: 800;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    footer {
+        margin-top: 400%;
+    }
+
+    .container .container-title h1 {
+        color: white;
+        margin-top: 35%;
+        font-size: 85px;
+    }
+
+    .container .container-title h4 {
+        font-size: 33px;
+        font-weight: 600;
+    }
+
+    .container .links {
+        display: flex;
+        width: 100%;
+        color: blue;
+        margin-top: 40%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 850px) {
+    footer {
+        margin-top: 620%;
+    }
+
+    .con-4 .container-more-content h1 {
+        font-size: 65px;
+        margin-top: 50%;
+        display: block;
+    }
+
+    .con-4 .container-more-content h4 {
+        font-size: 35px;
+        color: rgb(253, 248, 248);
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 810px) {
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .item {
+        display: none;
+    }
+
+    .container .container-title h1 {
+        color: white;
+        margin-top: 35%;
+        font-size: 85px;
+    }
+
+    .container .container-title h4 {
+        font-size: 33px;
+        font-weight: 600;
+    }
+
+    .container .links {
+        display: flex;
+        width: 100%;
+        color: blue;
+        margin-top: 40%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 720px) {
+    .container .container-title h1 {
+        color: white;
+        margin-top: 35%;
+        font-size: 85px;
+    }
+
+    .container .container-title h4 {
+        font-size: 33px;
+        font-weight: 600;
+    }
+
+    .container .links {
+        display: flex;
+        width: 100%;
+        color: blue;
+        margin-top: 40%;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 580px) {
+    .container .links {
+        display: flex;
+        width: 100%;
+        color: blue;
+        margin-top: 50%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .container .container-title h1 {
+        color: white;
+        margin-top: 35%;
+        font-size: 65px;
+    }
+
+    .container .container-title h4 {
+        font-size: 25px;
+        margin-top: 10%;
+        font-weight: 600;
+    }
+
+    .container .links {
+        display: flex;
+        width: 100%;
+        color: blue;
+        margin-top: 40%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 450px) {
+    footer {
+        margin-top: 800%;
+    }
+
+    .logo {
+        display: flex;
+        margin-right: 120%;
+        margin-left: 25%;
+    }
+
+    .item {
+        display: block;
+    }
+
+    .container .container-title h1 {
+        color: white;
+        margin-top: 35%;
+        font-size: 55px;
+    }
+
+    .container .container-title h4 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .container .links {
+        display: flex;
+        width: 100%;
+        color: blue;
+        margin-top: 40%;
+        justify-content: center;
+    }
+
+    .container {
+        background: url('images/iphone media.jpeg') no-repeat;
+        background-size: cover;
+        width: 105%;
+        background-size: calc(50%, 20%);
+        height: 100vh;
+        background-position: center;
+    }
+
+    /* 2 */
+    .con-2 {
+        margin-top: 20px;
+        background: url('images/1.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* 3 */
+    .con-3 {
+        background: url('images/watches.jpg') no-repeat;
+        background-size: cover;
+        margin-top: 10px;
+        background-position: center;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .logo {
+        display: flex;
+        margin-right: 120%;
+        margin-left: 25%;
+    }
+
+    .item {
+        display: block;
+    }
+
+    .con-4 .con-m-6 h4,
+    .con-4 .con-m-6 h1 i {
+        color: black;
+    }
+
+    .con-4 .container-more-content .links {
+        margin-top: 45%;
+        display: none;
+        margin-left: 0;
+    }
+
+    .con-4 .container-more-content .links a {
+        display: none;
+    }
+
+    .con-4 .container-more-content .container-title h1 {
+        font-size: 45px;
+        margin-top: 550px;
+        font-size: 35px;
+    }
+
+    .con-4 .container-more-content h4 {
+        font-size: 25px;
+        color: rgb(253, 248, 248);
+        margin-top: 10px;
+    }
+
+
+    .container {
+        background: url('images/iphone media.jpeg') no-repeat;
+        background-size: cover;
+        width: 105%;
+        background-size: calc(50%, 20%);
+        height: 100vh;
+        background-position: center;
+    }
+
+    /* 2 */
+    .con-2 {
+        margin-top: 20px;
+        background: url('images/1.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* 3 */
+    .con-3 {
+        background: url('images/watches.jpg') no-repeat;
+        background-size: cover;
+        margin-top: 10px;
+        background-position: center;
+    }
+
+    .container .container-title h1 {
+        color: white;
+        margin-top: 65%;
+        font-size: 45px;
+    }
+
+    .container .container-title h4 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .container .links {
+        display: block;
+        width: 100%;
+        color: blue;
+        margin-top: 65%;
+        justify-content: center;
+    }
+
+    footer {
+        margin-top: 900%;
+    }
+
+    .foot-nav {
+        display: block;
+    }
+
+    .foot-nav ul {
+        display: block;
+    }
+
+    .foot-nav ul li {
+        text-align: center;
+    }
+
+    .foot-nav p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 360px) {
+    .logo {
+        display: flex;
+        margin-right: 120%;
+        margin-left: 25%;
+    }
+
+    .item {
+        display: block;
+    }
+
+    .con-4 .con-m-6 h4,
+    .con-4 .con-m-6 h1 i {
+        color: black;
+    }
+
+    .con-4 .container-more-content .links {
+        margin-top: 45%;
+        display: none;
+        margin-left: 0;
+    }
+
+    .con-4 .container-more-content .links a {
+        display: none;
+    }
+
+    .con-4 .container-more-content .container-title h1 {
+        font-size: 45px;
+        margin-top: 550px;
+        font-size: 35px;
+    }
+
+    .con-4 .container-more-content h4 {
+        font-size: 25px;
+        color: rgb(253, 248, 248);
+        margin-top: 10px;
+    }
+
+
+    .container {
+        background: url('images/iphone media.jpeg') no-repeat;
+        background-size: cover;
+        width: 105%;
+        background-size: calc(50%, 20%);
+        height: 100vh;
+        background-position: center;
+    }
+
+    /* 2 */
+    .con-2 {
+        margin-top: 20px;
+        background: url('images/1.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* 3 */
+    .con-3 {
+        background: url('images/watches.jpg') no-repeat;
+        background-size: cover;
+        margin-top: 10px;
+        background-position: center;
+    }
+
+    .container .container-title h1 {
+        color: white;
+        margin-top: 65%;
+        font-size: 45px;
+    }
+
+    .container .container-title h4 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .container .links {
+        display: block;
+        width: 100%;
+        color: blue;
+        margin-top: 65%;
+        justify-content: center;
+    }
+
+    footer {
+        margin-top: 1000%;
+    }
+
+    .foot-nav {
+        display: block;
+    }
+
+    .foot-nav ul {
+        display: block;
+    }
+
+    .foot-nav ul li {
+        text-align: center;
+    }
+
+    .foot-nav p {
+        text-align: center;
+    }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Software Dev | Web - 1</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <h3>ITR<span>INFO</span></h3>
+    </div>
+    <ul>
+      <li id="active" onclick="home()">Home</li>
+      <li>Contact</li>
+      <li id="sign-btn" onclick="logPage()">Sign Up</li>
+      <li id="menu-icon"><i class='bx bx-menu' onclick="menu()"></i></li>
+
+    </ul>
+    <br>
+    <hr id="menu-hr">
+    <div class="menu-nav" id="menunav">
+      <ul id="menu-ul">
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">Sign Up</a>
+      </ul>
+    </div>
+  </nav>
+  <main id="main">
+    <div class="top">
+      <div class="first-top">
+        <p id="top-p">WelCome To ITRINFO</p>
+        <p id="middle-p">" Empowering Knowledge, One Click at a Time "</p>
+        <p id="bottom-p">Join Today , ITR INFO</p>
+      </div>
+      <div class="second-top">
+        <button id="top-main-btn">Finish Your Sign Up</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Notification - Popup -->
+  <div class="pop-wrap" id="pop">
+    <h3>Sign Up Here To Get , Your Favorite Movies </h3>
+    <br><br><br>
+    <hr>
+    <div class="pop-log">
+      <div class="pop-content">
+        <input type="text" placeholder="Enter Your Username "><br>
+        <input type="text" placeholder="Enter Your Password ">
+      </div>
+      <br>
+      <hr style="background-color: rgb(31, 28, 28);">
+      <div class="pop-footer">
+        <button id="log-btn">Sign Up</button>
+        <p id="pop-descri"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p id="footer-title"> My Information </p>
+    <div class="parent">
+      <div class="first">
+        <a href="#">FOQ</a><br><a href="#">Investor Relations</a><br><a href="#">Privacy</a><br><a href="#">Speed Test</a>
+      </div>
+      <div class="second">
+        <a href="#">Help Center</a><br><a href="#">Jobs</a><br><a href="#">Cookie proference</a><br><a href="#">Legal Notices</a>
+      </div>
+      <div class="third">
+        <a href="#">Account</a><br><a href="#">Ways To Watch</a><br><a href="#">Corparate Information</a><br><a href="#">Only On ITRINFO</a>
+      </div>
+      <div class="four">
+        <a href="#">Media Centre</a><br><a href="#">Terms Of Use</a><br><a href="#">Contact Us</a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="logo-container">
+      <p> <span>D</span>eveloped By <span>R</span>itesh Thakare</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

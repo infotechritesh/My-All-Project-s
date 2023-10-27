@@ -1,0 +1,242 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap'); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    height: 75px;
+    width: 100%;
+    background-color: rgb(105, 83, 83);
+}
+
+.logo {
+    margin-left: 20%;
+}
+
+.logo h1 {
+    color: rgb(235, 151, 151);
+    font-size: 30px;
+}
+
+ul {
+    display: flex;
+    margin-right: 20%;
+    color: white;
+}
+
+ul li {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    padding: 10px;
+    margin-left: 15px;
+    list-style: none;
+    transition: all ease 0.2s;
+    border: 1px solid rgb(234, 8, 8);
+    border-radius: 10px;
+}
+
+#sub {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: rgb(234, 8, 8);
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+#sub:hover,ul li:hover {
+    background: rgb(201, 14, 14);
+}
+
+
+/* Select Membership System In Main Container */
+
+main { 
+    padding: 20px 20px 20px 20px;
+    flex-wrap: wrap;
+    display: inline-flex;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.card-wrap{
+    display: flex;
+    flex-wrap: wrap
+}
+.card { 
+    padding: 15px;
+    width: 350px;
+    border: 2px solid rgb(103, 102, 102);
+    border-radius: 12px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.card .top { 
+    padding: 0;
+    color: rgb(238, 235, 235);
+    font-size: 18px;
+}
+.card .top p { 
+    margin-top: 2px;
+}
+.card .card-descri { 
+    padding: 2px;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 10px;
+}
+.card hr{
+    background: rgb(139, 136, 136);
+}
+.card .more-decsri { 
+    padding: 2px ;
+}
+.card .more-decsri p { 
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card .more-decsri a{
+    color: rgb(196, 194, 194);
+    text-decoration: none;
+    margin-top: 5px;
+    display: inline-block;
+    padding: 5px;
+}
+.card .membership-btn{
+    padding: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.card  .membership-btn button { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(234, 8, 8);
+    transition: all ease 0.2s;
+    border: none;
+    outline: none;
+    width: 120px;
+    font-weight: 600;
+}
+.card .membership-btn button:hover { 
+    background-color: rgb(201, 14, 14);
+}
+
+
+
+/* Paymnet Method's Design */
+.pay {
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 80%;
+}
+.pay-container , .pay-container-upi{
+    width: 550px;
+    padding: 15px;
+    border: 1px solid rgb(134, 132, 132);
+    display: flex;
+    font-size: 18px;
+    transition: all ease 0.5s;
+}
+.pay-container i, .pay-container-upi i{
+    font-size: 25px;
+    color: white;
+    font-weight: normal;
+    margin-left: 180px;
+    transition: all ease 0.2s;
+}
+.pay-container:hover , .pay-container-upi:hover {
+    background: rgba(161, 160, 160, 0.301);
+    font-size: 21px;
+}
+.pay-container:hover i, .pay-container-upi:hover i{
+    font-weight: bold;
+}
+
+/* Credit And Debit Card Form Design */
+
+.pay-form { 
+    margin-top: 3%;
+    margin-left: 128%;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.pay-form input {
+    padding: 10px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(187, 180, 180);
+    background: transparent;
+    color: white;
+    width: 400px;
+}
+.pay-form .pay-value{
+    background: rgba(188, 186, 186, 0.377);
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 5px;
+    display: flex;
+}
+.pay-form .pay-value a{
+    color: rgb(231, 83, 20);
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 230px;
+}
+.pay-form .pay-value a:hover{
+    text-decoration: underline;
+}
+.pay-form button{
+    width: 400px;
+    padding: 10px;
+    font-size: 20px;
+    background: rgb(234, 8, 8);
+    border: none;
+    outline: none;
+    color: white;
+    margin-top: 25px;
+    border-radius: 5px;
+    transition: all ease 0.2s;
+}
+
+.pay-form button:hover{
+    background: rgb(201, 14, 14);
+}

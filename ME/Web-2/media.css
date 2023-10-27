@@ -1,0 +1,520 @@
+@media (max-width: 400px) {
+    section {
+        padding: auto;
+        margin: auto;
+        height: auto;
+        width: auto;
+        margin-top: 10%;
+    }
+
+    section .co-headtitle h3 {
+        text-align: center;
+    }
+
+    section .co-content {
+        padding: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+
+
+
+    section .co-content .co-card {
+        width: 380px;
+        padding: 10px;
+        background: var(--borders);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: all ease 0.5s;
+    }
+
+    section .co-content .co-card:hover {
+        transform: translate(0%, -3%);
+    }
+
+    section .co-content .co-card img {
+        object-fit: cover;
+        width: 350px;
+    }
+
+    section .co-content .co-card p {
+        margin-top: 10%;
+        color: var(--gunmetal);
+        font-size: 15px;
+    }
+
+    section .std-wrapper {
+        padding: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 10rem;
+    }
+
+    section .std-wrapper .std-card {
+        width: 300px;
+        padding: 10px;
+        margin-right: 50px;
+        margin-left: 50px;
+        background: var(--borders);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: all ease 0.5s;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    section .std-wrapper .std-card:nth-child(2),
+    .std-card:nth-child(5),
+    .std-card:nth-child(8),
+    .std-card:nth-child(11) {
+        transform: translate(0%, 0%);
+    }
+
+    section .std-wrapper .std-card .top {
+        display: block;
+    }
+
+    #user-picture {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        margin-top: 2;
+        margin-left: 35%;
+    }
+
+    section .std-wrapper .std-card .top .com-intro {
+        margin-left: 10%;
+        margin-top: 1%;
+    }
+
+    section .std-card .top .com-intro p {
+        color: var(--gunmetal);
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    #companies-logo {
+        width: 180px;
+        height: 100px;
+        margin-left: 10%;
+    }
+
+    section .std-card .std-intro {
+        padding: 10px;
+    }
+
+    section .std-card .std-intro p {
+        color: var(--gunmetal);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-top: 2%;
+    }
+
+    section button {
+        background: var(--gunmetal);
+        border: none;
+        width: 200px;
+        border-radius: 5px;
+        color: var(--white);
+        font-size: 20px;
+        font-weight: 400;
+        display: flex;
+        margin-left: 24%;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        transition: all ease 0.2s;
+
+    }
+
+    section button:hover {
+        background: transparent;
+        border: 2px solid var(--borders);
+        color: var(--gunmetal);
+    }
+
+    .co-founder img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+
+    .co-founder .skills {
+        display: block;
+        justify-content: space-around;
+    }
+
+    .co-founder .skills .sk-card {
+        padding: 15px;
+        margin-bottom: 2%;
+        margin-top: 5%;
+    }
+
+    .co-founder .skills .sk-card p {
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .co-founder .skills .sk-card h2 {
+        font-size: 25px;
+        font-weight: 800;
+        font-style: italic;
+        color: var(--gunmetal);
+        text-align: center;
+    }
+
+    .co-founder .skills .sk-card h1,
+    p,
+    ul li {
+        color: var(--gunmetal);
+    }
+
+    .co-founder .skills .sk-card ul li {
+        list-style: none;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    /* Payment Content Design */
+    .co-pay-container {
+        width: 100%;
+        padding: 10% 15%;
+    }
+
+    .co-pay-container .pay-content {
+        display: block;
+        justify-content: space-between;
+    }
+
+    .co-pay-container .pay-content .left {
+        width: 100%;
+        display: block;
+        padding: 5%;
+        margin-top: 75%;
+    }
+
+    .co-pay-container .pay-content .left h1 {
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        color: var(--blue);
+    }
+
+    .co-pay-container .pay-content .left h3 {
+        font-size: 25px;
+        color: var(--gunmetal);
+        margin-bottom: 2%;
+    }
+
+    .co-pay-container .pay-content .left p {
+        font-size: 20px;
+        margin-bottom: 2%;
+    }
+
+    .co-pay-container .pay-content .right-box {
+        padding: 0;
+    }
+
+    .co-pay-container .pay-content .right-box h3 {
+        color: var(--gunmetal);
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .co-pay-container .pay-content .right-box form {
+        border: 2px solid var(--gunmetal);
+        width: 380px;
+    }
+
+    .co-pay-container .pay-content .right-box .pay-value {
+        width: 200px;
+        border: 1px solid var(--gunmetal);
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .co-pay-container .pay-content .right-box form input {
+        padding: 10px;
+        margin-top: 2%;
+        width: 250px;
+        display: none;
+    }
+
+    .co-pay-container .pay-content .right-box form button {
+        padding: 15px;
+        width: 200px;
+        color: var(--white);
+        font-size: 20px;
+        font-weight: 500;
+        background: var(--gunmetal);
+        border: none;
+        border-radius: 5px;
+        margin-top: 2%;
+    }
+
+    .pay-process {
+        display: block;
+    }
+
+    .pay-process .pay-btn {
+        display: flex;
+    }
+
+    .pay-process .pay-btn button {
+        margin-left: 2%;
+    }
+
+    .pay-process .process-box {
+        width: 150px;
+        margin-left: 35%;
+        height: 150px;
+        border-radius: 50%;
+        border: 20px solid var(--borders);
+        border-top-color: var(--blue);
+        animation: loader 1s infinite;
+        background: transparent;
+    }
+
+    .pay-process .cancel-payment-box {
+        width: 250px;
+        margin-left: 39%;
+        height: 250px;
+        border: 20px solid var(--borders);
+        border-left-color: red;
+        border-right-color: red;
+        border-top: none;
+        border-bottom: none;
+        background: transparent;
+    }
+
+    @keyframes loader {
+        to {
+            top: 10%;
+        }
+
+        from {
+            transform: rotate(360deg);
+        }
+    }
+
+    .pay-process h1 {
+        font-size: 25px;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+
+}
+
+
+@media (max-width: 460px) {
+    section {
+        padding: auto;
+        margin: auto;
+        height: auto;
+        margin-top: 10%;
+    }
+
+    nav ul li {
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    section .co-headtitle h3 {
+        text-align: center;
+    }
+
+    section .co-content {
+        padding: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+
+
+
+    section .co-content .co-card {
+        width: 380px;
+        padding: 10px;
+        background: var(--borders);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: all ease 0.5s;
+    }
+
+    section .co-content .co-card:hover {
+        transform: translate(0%, -3%);
+    }
+
+    section .co-content .co-card img {
+        object-fit: cover;
+        width: 350px;
+    }
+
+    section .co-content .co-card p {
+        margin-top: 10%;
+        color: var(--gunmetal);
+        font-size: 15px;
+    }
+
+    section .std-wrapper {
+        padding: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 10rem;
+    }
+
+    section .std-wrapper .std-card {
+        width: 300px;
+        padding: 10px;
+        margin-right: 50px;
+        margin-left: 50px;
+        background: var(--borders);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: all ease 0.5s;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    section .std-wrapper .std-card:nth-child(2),
+    .std-card:nth-child(5),
+    .std-card:nth-child(8),
+    .std-card:nth-child(11) {
+        transform: translate(0%, 0%);
+    }
+
+    section .std-wrapper .std-card .top {
+        display: block;
+    }
+
+    #user-picture {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        margin-top: 2;
+        margin-left: 35%;
+    }
+
+    section .std-wrapper .std-card .top .com-intro {
+        margin-left: 10%;
+        margin-top: 1%;
+    }
+
+    section .std-card .top .com-intro p {
+        color: var(--gunmetal);
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    #companies-logo {
+        width: 180px;
+        height: 100px;
+        margin-left: 10%;
+    }
+
+    section .std-card .std-intro {
+        padding: 10px;
+    }
+
+    section .std-card .std-intro p {
+        color: var(--gunmetal);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-top: 2%;
+    }
+
+    section button {
+        background: var(--gunmetal);
+        border: none;
+        width: 200px;
+        border-radius: 5px;
+        color: var(--white);
+        font-size: 20px;
+        font-weight: 400;
+        display: flex;
+        margin-left: 24%;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        transition: all ease 0.2s;
+
+    }
+
+    section button:hover {
+        background: transparent;
+        border: 2px solid var(--borders);
+        color: var(--gunmetal);
+    }
+
+    .co-founder img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+
+    .co-founder .skills {
+        display: block;
+        justify-content: space-around;
+    }
+
+    .co-founder .skills .sk-card {
+        padding: 15px;
+        margin-bottom: 2%;
+        margin-top: 5%;
+    }
+
+    .co-founder .skills .sk-card p {
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .co-founder .skills .sk-card h2 {
+        font-size: 25px;
+        font-weight: 800;
+        font-style: italic;
+        color: var(--gunmetal);
+        text-align: center;
+    }
+
+    .co-founder .skills .sk-card h1,
+    p,
+    ul li {
+        color: var(--gunmetal);
+    }
+
+    .co-founder .skills .sk-card ul li {
+        list-style: none;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+}

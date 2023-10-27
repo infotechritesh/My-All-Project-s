@@ -1,0 +1,180 @@
+@media (max-width: 400px) {
+    nav {
+        display: block;
+        width: 400px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul {
+        margin-bottom: 5%;
+    }
+
+    nav ul li {
+        font-size: 23px;
+        margin-left: 30px;
+        text-align: center;
+    }
+
+    nav .logo {
+        margin-top: 2%;
+        margin-left: 0%;
+        text-align: center;
+        margin-bottom: 8%;
+    }
+
+    nav .logo h1 {
+        font-size: 25px;
+    }
+
+    nav .search i {
+        margin-left: 170px;
+        margin-bottom: 5%;
+    }
+
+
+
+
+    section {
+        width: 100%;
+        height: auto;
+        padding: 50% 0%;
+    }
+
+    section h3 {
+        text-align: center;
+        margin-bottom: 5%;
+        font-size: 35px;
+        font-weight: 800;
+        color: var(--gunmetal);
+    }
+
+    section .product_wrapper {
+        display: grid;
+        padding: auto;
+        grid-template-columns: auto 85%;
+        grid-template-rows: auto auto;
+        gap: 2rem;
+        padding: 10%;
+    }
+
+    section .product_wrapper .product_card {
+        padding: 10px;
+        border: 2px solid var(--borders);
+        width: 150px;
+        height: auto;
+        display: block;
+        transition: all ease 0.2s;
+    }
+
+    section .product_wrapper .product_card img {
+        width: 130px;
+        height: 130px;
+        transition: all ease 0.2s;
+    }
+
+    section .product_card a {
+        padding: 5px;
+        color: var(--gunmetal);
+        text-decoration: none;
+        font-size: 12px;
+        background: var(--white);
+        position: absolute;
+        margin-top: -6%;
+        margin-left: 0.5%;
+        transition: all ease 0.2s;
+    }
+
+    section .product_card .descri {
+        display: flex;
+    }
+
+    section .product_card .descri .left {
+        width: 180px;
+    }
+
+    section .product_card .descri .left p {
+        font-size: 8px;
+        color: var(--gunmetal);
+        margin-top: 2%;
+    }
+
+    section .product_card .descri .left #product_name {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    section .product_card .descri .right {
+        padding: 2px;
+    }
+
+    section .product_card .descri .right i {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--white);
+        background: var(--gunmetal);
+        border: 2px solid var(--gunmetal);
+        border-radius: 50%;
+        padding: 6px;
+        margin-left: 20%;
+        transition: all ease 0.2s;
+    }
+
+    main .banner_wrapper {
+        background: url('images/banner.jpeg') no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        width: 100%;
+        margin-left: 0;
+        height: 85vh;
+        background-position: center;
+    }
+
+    main .banner_descri {
+        padding: 10px;
+        width: 320px;
+        margin-left: 5%;
+        height: auto;
+        background: #253347a8;
+        border-radius: 5px;
+        position: absolute;
+        color: var(--white);
+        font-size: 20px;
+        transform: translate(0%, -120%);
+    }
+
+    main .banner_descri h3 {
+        font-size: 30px;
+        font-weight: 800;
+        color: var(--gunmetal);
+        margin-bottom: 2%;
+    }
+
+    main .banner_descri p {
+        line-height: 25px;
+        margin-bottom: 3%;
+        font-size: 18px;
+    }
+
+    main .banner_descri button {
+        padding: 15px;
+        border: none;
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--white);
+        background: var(--gunmetal);
+        border-radius: 5px;
+        margin-top: 5%;
+        box-shadow: 10px 5px 5px var(--blue);
+        transition: all ease 0.2s;
+    }
+
+    main .banner_descri button:hover {
+        background: var(--blue);
+        border: 2px solid var(--blue);
+        box-shadow: 0 0 0 transparent;
+    }
+    footer h1 {
+        font-size: 48px;
+    }
+}

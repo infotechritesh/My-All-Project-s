@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #345ff6;
+    --gunmetal: #253347;
+    --dark-electric-blue: #5e6e85;
+    --borders: #d8e2e7;
+    --white: #fff;
+}
+
+@font-face {
+    font-family: 'inter-regular';
+    src: url('./assets/fonts/static/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'inter-semibold';
+    src: url('./assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+}

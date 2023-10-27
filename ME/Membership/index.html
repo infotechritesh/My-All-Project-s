@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Membership System </title>
+    <!-- Box Icon's Use For In This Website's -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap'); */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background: black;
+        color: white;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        height: 75px;
+        width: 100%;
+        background-color: rgb(105, 83, 83);
+    }
+
+    .logo {
+        margin-left: 20%;
+    }
+
+    .logo h1 {
+        color: rgb(235, 151, 151);
+        font-size: 30px;
+    }
+
+    ul {
+        display: flex;
+        margin-right: 20%;
+        color: white;
+    }
+
+    ul li {
+        font-size: 18px;
+        font-weight: 400;
+        color: white;
+        padding: 10px;
+        margin-left: 15px;
+        list-style: none;
+        transition: all ease 0.2s;
+        border: 1px solid rgb(234, 8, 8);
+        border-radius: 10px;
+    }
+
+    #sub {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background: rgb(234, 8, 8);
+        border: none;
+        color: white;
+        border-radius: 10px;
+    }
+
+    #sub:hover,
+    ul li:hover {
+        background: rgb(201, 14, 14);
+    }
+
+
+    /* Select Membership System In Main Container */
+
+    main {
+        padding: 20px 20px 20px 20px;
+        flex-wrap: wrap;
+        display: inline-flex;
+    }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 600;
+        color: white;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    .card-wrap {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .card {
+        padding: 15px;
+        width: 350px;
+        border: 2px solid rgb(103, 102, 102);
+        border-radius: 12px;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+
+    .card .top {
+        padding: 0;
+        color: rgb(238, 235, 235);
+        font-size: 18px;
+    }
+
+    .card .top p {
+        margin-top: 2px;
+    }
+
+    .card .card-descri {
+        padding: 2px;
+        font-size: 18px;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .card hr {
+        background: rgb(139, 136, 136);
+    }
+
+    .card .more-decsri {
+        padding: 2px;
+    }
+
+    .card .more-decsri p {
+        font-size: 20px;
+        font-weight: normal;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card .more-decsri a {
+        color: rgb(196, 194, 194);
+        text-decoration: none;
+        margin-top: 5px;
+        display: inline-block;
+        padding: 5px;
+    }
+
+    .card .membership-btn {
+        padding: 10px;
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card .membership-btn button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        font-size: 18px;
+        color: white;
+        border-radius: 10px;
+        background-color: rgb(234, 8, 8);
+        transition: all ease 0.2s;
+        border: none;
+        outline: none;
+        width: 120px;
+        font-weight: 600;
+    }
+
+    .card .membership-btn button:hover {
+        background-color: rgb(201, 14, 14);
+    }
+
+
+
+    /* Paymnet Method's Design */
+    .pay {
+        display: inline-block;
+        margin-top: 10%;
+        margin-left: 80%;
+    }
+
+    .pay-container,
+    .pay-container-upi {
+        width: 550px;
+        padding: 15px;
+        border: 1px solid rgb(134, 132, 132);
+        display: flex;
+        font-size: 18px;
+        transition: all ease 0.5s;
+    }
+
+    .pay-container i,
+    .pay-container-upi i {
+        font-size: 25px;
+        color: white;
+        font-weight: normal;
+        margin-left: 180px;
+        transition: all ease 0.2s;
+    }
+
+    .pay-container:hover,
+    .pay-container-upi:hover {
+        background: rgba(161, 160, 160, 0.301);
+        font-size: 21px;
+    }
+
+    .pay-container:hover i,
+    .pay-container-upi:hover i {
+        font-weight: bold;
+    }
+
+    /* Credit And Debit Card Form Design */
+
+    .pay-form {
+        margin-top: 3%;
+        margin-left: 128%;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .pay-form input {
+        padding: 10px;
+        margin-top: 25px;
+        flex-wrap: wrap;
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid rgb(187, 180, 180);
+        background: transparent;
+        color: white;
+        width: 400px;
+    }
+
+    .pay-form .pay-value {
+        background: rgba(188, 186, 186, 0.377);
+        padding: 15px;
+        margin-top: 25px;
+        border-radius: 5px;
+        display: flex;
+    }
+
+    .pay-form .pay-value a {
+        color: rgb(231, 83, 20);
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+        margin-left: 230px;
+    }
+
+    .pay-form .pay-value a:hover {
+        text-decoration: underline;
+    }
+
+    .pay-form button {
+        width: 400px;
+        padding: 10px;
+        font-size: 20px;
+        background: rgb(234, 8, 8);
+        border: none;
+        outline: none;
+        color: white;
+        margin-top: 25px;
+        border-radius: 5px;
+        transition: all ease 0.2s;
+    }
+
+    .pay-form button:hover {
+        background: rgb(201, 14, 14);
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>ITRFLIX</h1>
+        </div>
+        <ul>
+            <li>Contact</li>
+            <li id="sub" onclick="subscribe()">Subscibe</li>
+        </ul>
+    </nav>
+
+    <h3 id="membership-title">
+        Choose the plan that’s right for you</h3>
+    <main>
+        <div class="card-wrap" id="cards">
+            <div class="card">
+                <div class="top">
+                    <p id="card-title">Normal</p>
+                    <p id="card-value">$ 199</p>
+                </div>
+                <div class="card-descri">
+                    <p>Good video quality. Watch in 720p (HD). Downloads available. Watch on your TV, computer, mobile
+                        phone
+                        and tablet.</p>
+                </div>
+                <hr>
+                <div class="more-decsri">
+                    <p>With any plan, you can:</p>
+                    <a href="#">Watch all you want.</a><br>
+                    <a href="#">Enjoy recommendations just for you.</a><br>
+                    <a href="#">Change or cancel your plan anytime.</a>
+                </div>
+                <div class="membership-btn">
+                    <button id="btn-mem" onclick="select(),moneyValue()"> Select </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <p id="card-title">Standard </p>
+                    <p id="card-value">$ 499</p>
+                </div>
+                <div class="card-descri">
+                    <p>Great video quality. Watch in 1080p (Full HD). Downloads available. Watch on your TV, computer,
+                        mobile phone and tablet.</p>
+                </div>
+                <hr>
+                <div class="more-decsri">
+                    <p>With any plan, you can:</p>
+                    <a href="#">Watch all you want.</a><br>
+                    <a href="#">Enjoy recommendations just for you.</a><br>
+                    <a href="#">Change or cancel your plan anytime.</a>
+                </div>
+                <div class="membership-btn">
+                    <button id="btn-mem" onclick="select(),moneyValue1()"> Select </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="top">
+                    <p id="card-title"> Premium </p>
+                    <p id="card-value">$ 1199</p>
+                </div>
+                <div class="card-descri">
+                    <p>Our best video quality. Watch in 4K (Ultra HD) and HDR. Downloads available. Watch on your TV,
+                        computer, mobile phone and tablet.</p>
+                </div>
+                <hr>
+                <div class="more-decsri">
+                    <p>With any plan, you can : </p>
+                    <a href="#">Watch all you want.</a><br>
+                    <a href="#">Enjoy recommendations just for you.</a><br>
+                    <a href="#">Change or cancel your plan anytime.</a>
+                </div>
+                <div class="membership-btn">
+                    <button id="btn-mem" onclick="select(),moneyValue2()"> Select </button>
+                </div>
+            </div>
+
+        </div>
+        <!-- Select Payment Methods Container Design -->
+        <div class="pay" id="pay">
+            <div class="pay-container" onclick="creDeb()">
+                <p> Payment with Credit Card </p>
+                <i class='bx bx-right-arrow-alt'></i>
+            </div><br><br>
+        </div>
+
+
+        <!--- Credit And Debit Card Form -->
+        <div class="pay-form" id="pay-form">
+            <div class="cre" id="cre-deb-form">
+                <input type="text" placeholder="Enter Your Card Number "><br>
+                <input type="text" placeholder="First Name "><br>
+                <input type="text" placeholder="Last Name ">
+            </div>
+            <br>
+            <br>
+            <div class="pay-value">
+                <p id="value"></p>
+                <a href="#" id="change-plan" onclick="change()">Change</a>
+            </div>
+            <button id="start-mem" onclick="nextPage()">Pay Now <span></span></button>
+        </div>
+
+    </main>
+
+
+    <img src="images/profile-3.jpg" alt="" width="850px" height="750px" id="next-page" class="center flex">
+
+    <!-- Receipt For Customer -->
+
+
+
+    <!-- Script For Functionality -->
+    <script>
+        // Javascript 
+
+        // Hidden Functionality 
+        document.getElementById('pay').style.display = 'none';
+        document.getElementById('pay-form').style.display = 'none';
+
+
+        // Select Subscription
+        function select() {
+            document.getElementById('pay').style.display = 'block';
+            document.getElementById('cards').style.display = 'none';
+
+            document.getElementById('membership-title').innerHTML = 'Choose how to pay';
+        }
+
+        function creDeb() {
+            document.getElementById('pay').style.display = 'none';
+            document.getElementById('pay-form').style.display = 'block';
+
+            document.getElementById('membership-title').innerHTML = 'Set up your credit or debit card';
+        }
+
+        // Money Define
+        function moneyValue() {
+            let money = document.getElementById('value');
+            money.innerHTML = ' $ 199';
+        }
+        function moneyValue1() {
+            let money = document.getElementById('value');
+            money.innerHTML = ' $ 499';
+        }
+        function moneyValue2() {
+            let money = document.getElementById('value');
+            money.innerHTML = ' $ 1199';
+        }
+        // Change textContent on start debit or credit form fill 
+
+        function change() {
+            document.getElementById('pay').style.display = 'none';
+            document.getElementById('cards').style.display = 'flex';
+            document.getElementById('pay-form').style.display = 'none';
+
+
+            document.getElementById('membership-title').innerHTML = ' Choose the plan that’s right for you';
+
+        }
+
+
+        // Next Page 
+
+        document.getElementById('next-page').style.display = ' none ';
+
+        function nextPage() {
+            let next = document.getElementById('next-page');
+
+            next.style.display = 'none'
+
+            if (money == onclick) {
+                next.style.display = 'flex'
+            }
+            else {
+                alert('Please Get Subscription !! ');
+            }
+        }
+
+        // On Click Subscribe button script
+
+        function subscribe() {
+            alert(' Please Select Your Membership ')
+        }
+    </script>
+
+</body>
+
+</html>

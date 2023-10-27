@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.flag_container {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    transition: all ease 0.5s;
+    animation: flag 5s infinite linear;
+}
+.flag_container div {
+    width: 60%;
+    height: 30vh;
+    background: orangered;
+    margin-left: 20%;
+    border: 1px solid black;
+}
+.flag_container div:nth-child(2){
+    background: white;
+}
+.flag_container div:nth-child(3){
+    background: green
+}
+.flag_container div:nth-child(4){
+    background: transparent;
+    border: none;
+}
+.flag_container .chakra img {
+    width: 232px;
+    height: 232px;
+    transform: translate(120%, -187%);
+}
+@keyframes flag{
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: scale3d(1.3, 1.3, 1.3);
+        perspective: 600px;
+    }
+}

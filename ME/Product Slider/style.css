@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e3e1e1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 5%;
+    width: auto;
+    height: 500px;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+    background-color: white;
+}
+
+.container .main-product {
+    width: 480px;
+    height: 380px;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+
+.container .main-product .main_container_slider {
+    display: flex;
+    overflow: hidden;
+    width: 380px;
+    height: 350px;
+    border-radius: 10px;
+    background: transparent;
+    margin-left: 10%;
+}
+
+.container .main-product .main_container_slider img {
+    width: 450px;
+    height: 380px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+
+.container .product-nav {
+    display: flex;
+}
+
+.container .product-nav ul {
+    display: flex;
+    padding: 10px 0;
+    margin-top: 2%;
+}
+
+.container .product-nav ul li {
+    list-style: none;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.container .product-nav ul li img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+@media (max-width: 400px) {
+
+    .container .main-product {
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .container .main-product .main_container_slider {
+        display: flex;
+        overflow: hidden;
+        width: 380px;
+        height: 350px;
+        border-radius: 10px;
+        background: transparent;
+        margin-left: 0;
+    }
+
+
+    .container .product-nav ul {
+        display: flex;
+        padding: 10px 0;
+        margin-top: 2%;
+    }
+
+    .container .product-nav ul li {
+        list-style: none;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+}
