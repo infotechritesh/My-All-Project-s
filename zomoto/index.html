@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Zomoto | Home </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" alt="">
+        </div>
+        <div class="search">
+            <div class="cities">
+                <div class="cities_content"><i class="bi bi-geo-alt-fill" style="color: 
+                red; font-size: 18px; font-weight: 600;"></i>&nbsp;&nbsp;
+                    <h2>Pune</h2>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i id="arrow" class='bx bxs-down-arrow'></i>
+                </div>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span style="height: 25px; background: rgb(190, 190, 190); width: 2px;"></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="search_box">
+                <i class='bx bx-search-alt-2'></i>
+                <input type="search" placeholder="Search For Restoourent , And Favorite Dish..." id="dish_search">
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li id="log">Log In</li>
+                <li id="sign">Sign In</li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Citie's Search's Container -->
+    <div class="citi_search_content" id="citi_content">
+        <div class="citi_search_tit">
+            <ul style="display: flex;">
+                <li>Select Your City </li>
+                <li id="close_btn_banner_citi" onclick="close_product_banner()">X</li>
+            </ul>
+        </div><br>
+        <ul>
+            <li><i class="bi bi-geo-alt-fill">&nbsp;&nbsp;</i>Mumbai</li>
+            <hr>
+            <li><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Surat</li>
+            <hr>
+            <li><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Ahmedabad</li>
+            <hr>
+            <li><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Goa</li>
+            <hr>
+            <li><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Delhi</li>
+            <hr>
+            <li><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Kolkatta</li>
+            <hr>
+            <li><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Aurangabad</li>
+            <hr>
+            <li><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Indor</li>
+            <hr>
+            <li><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Vapi</li>
+            <hr>
+            <li><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Valsad</li>
+            <hr>
+            <li><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Rajkot</li>
+            <hr>
+            <li><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Nagpur</li>
+            <hr>
+            <li><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Benglore</li>
+            <hr>
+            <li><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Heydrabad</li>
+            <hr>
+            <li><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Bharuch</li>
+            <hr>
+            <li><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Jalgoan</li>
+            <hr>
+        </ul>
+    </div>
+
+
+    <!-- Dish And Restourent Search Box Container ! -->
+    <div class="resto_dish_search_content">
+        <ul>
+            <li>
+                <img src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png" alt="">
+                <div class="dish_descri">
+                    <p id="dish_tit">Pizza</p>
+                    <p id="dish_descri_p">It Very Coll Pizza And With Chiese , Spoilly To Make Then Fot .</p>
+                </div>
+            </li>
+            <hr>
+            <li>
+                <img src="https://b.zmtcdn.com/data/dish_images/ccb7dc2ba2b054419f805da7f05704471634886169.png" alt="">
+                <div class="dish_descri">
+                    <p id="dish_tit">Burger</p>
+                    <p id="dish_descri_p">100% Retivo That's greate Burger For Your girlfriend ! </p>
+                </div>
+            </li>
+            <hr>
+            <li>
+                <img src="https://b.zmtcdn.com/data/dish_images/d5ab931c8c239271de45e1c159af94311634805744.png" alt="">
+                <div class="dish_descri">
+                    <p id="dish_tit">Ice-Cream</p>
+                    <p id="dish_descri_p">It Very Coll Pizza And With Chiese , Spoilly To Make Then Fot .</p>
+                </div>
+            </li>
+            <hr>
+            <li>
+                <img src="https://b.zmtcdn.com/data/dish_images/c2f22c42f7ba90d81440a88449f4e5891634806087.png" alt="">
+                <div class="dish_descri">
+                    <p id="dish_tit">Roles</p>
+                    <p id="dish_descri_p">It Very Coll Pizza And With Chiese , Spoilly To Make Then Fot .</p>
+                </div>
+            </li>
+            <hr>
+            <li>
+                <img src="https://b.zmtcdn.com/data/o2_assets/fc641efbb73b10484257f295ef0b9b981634401116.png" alt="">
+                <div class="dish_descri">
+                    <p id="dish_tit">Sandwitch</p>
+                    <p id="dish_descri_p">It Very Coll Pizza And With Chiese , Spoilly To Make Then Fot .</p>
+                </div>
+            </li>
+            <hr>
+            <li>
+                <img src="https://b.zmtcdn.com/data/o2_assets/5dbdb72a48cf3192830232f6853735301632716604.png" alt="">
+                <div class="dish_descri">
+                    <p id="dish_tit">Momos</p>
+                    <p id="dish_descri_p">It Very Coll Pizza And With Chiese , Spoilly To Make Then Fot .</p>
+                </div>
+            </li>
+            <hr>
+        </ul>
+    </div>
+
+
+    <!-- 
+    <div class="items_nav">
+        <div class="items_nav_content">
+            <ul>
+                <li id="nav_item_active">
+                    <img src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png?output-format=webp"
+                        alt="">
+                    <p id="item_nav_type_name">Delivery</p>
+                </li>
+                <li>
+                    <img src="https://b.zmtcdn.com/data/o2_assets/78d25215ff4c1299578ed36eefd5f39d1616149985.png?output-format=webp"
+                        alt="">
+                    <p id="item_nav_type_name">Dining Out</p>
+                </li>
+                <li>
+                    <img src="https://b.zmtcdn.com/data/o2_assets/01040767e4943c398e38e3592bb1ba8a1616150142.png?output-format=webp"
+                        alt="">
+                    <p id="item_nav_type_name">Nightlife</p>
+                </li>
+            </ul>
+        </div>
+    </div> -->
+
+    <!-- Filter Nav -->
+    <div class="filter_nav">
+        <div class="filter_nav_content">
+            <ul>
+                <li>
+                    <i class="bi bi-sort-up"></i>
+                    &nbsp;&nbsp;
+                    <p>Filter</p>
+                </li>
+                <li>
+                    <p>Rating: 4.0 +</p>
+                </li>
+                <li id="nav_filter_1">
+                    <p>Pure Vage</p>
+                </li>
+                <li id="nav_filter_2">
+                    <p>Cuisines</p>
+                    &nbsp;&nbsp;
+                    <i class="bi bi-caret-down"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Create Login And Sign Up Popup -->
+    <div class="login_popup">
+        <div class="login_content">
+            <div class="login_popup_nav">
+                <div class="login_title">
+                    <h3 style="font-size: 28px;">Login</h3>
+                </div>
+                <div class="close_login_popup"><i class="bi bi-x-lg" style="font-weight: 800; font-size: 25px;"></i>
+                </div>
+            </div>
+            <div class="login_form">
+                <div class="_mobile_box">
+                    <div class="country_title">
+                        <img src="https://b.zmtcdn.com/images/flags_z10/in.png?output-format=webp" alt="">
+                        &nbsp;&nbsp;&nbsp;
+                        <div class="code_country"><a href="#">+ 91</a> <i class="bi bi-caret-down"></i></div>
+                    </div>
+                    <div class="mobile_number_input">
+                        <input type="tel" placeholder="Phone" id="input_login">
+                    </div>
+                </div>
+                <button id="mobile_number_submit">Send One Time Password</button>
+                <div class="or_title">
+                    <span></span>&nbsp;&nbsp;or&nbsp;&nbsp;<span></span>
+                </div>
+                <div class="social_accounts_login_box">
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#EF4F5F" width="24" height="24"
+                                viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
+                                class="sc-rbbb40-0 cdktuZ">
+                                <title>mail-fill</title>
+                                <path
+                                    d="M10 9.58c-1.62 0-10-4.76-10-4.76v-0.74c0-0.92 0.74-1.66 1.66-1.66h16.68c0.92 0 1.66 0.74 1.66 1.66l-0.020 0.84c0 0-8.28 4.66-9.98 4.66zM10 11.86c1.78 0 9.98-4.46 9.98-4.46l0.020 10c0 0.92-0.74 1.66-1.66 1.66h-16.68c-0.92 0-1.66-0.74-1.66-1.66l0.020-10c0 0 8.36 4.46 9.98 4.46z">
+                                </path>
+                            </svg>&nbsp;&nbsp;&nbsp;
+                            <p> Continue With E-mail</p>
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.87566 13.2946L4.10987 16.1534L1.31093 16.2126C0.474461 14.6611 0 12.886 0 10.9997C0 9.17565 0.443609 7.45552 1.22994 5.94092H1.23054L3.72238 6.39776L4.81396 8.87465C4.5855 9.54071 4.46097 10.2557 4.46097 10.9997C4.46106 11.8072 4.60732 12.5808 4.87566 13.2946Z"
+                                    fill="#FBBB00"></path>
+                                <path
+                                    d="M21.8082 8.94507C21.9345 9.61048 22.0004 10.2977 22.0004 11C22.0004 11.7875 21.9176 12.5557 21.7598 13.2967C21.2243 15.8183 19.8252 18.0201 17.8869 19.5782L17.8863 19.5776L14.7477 19.4175L14.3035 16.6445C15.5896 15.8902 16.5947 14.7098 17.1242 13.2967H11.2422V8.94507H17.21H21.8082Z"
+                                    fill="#518EF8"></path>
+                                <path
+                                    d="M17.8865 19.5778L17.8871 19.5784C16.002 21.0937 13.6073 22.0002 11.0006 22.0002C6.81152 22.0002 3.16945 19.6588 1.31152 16.2132L4.87625 13.2952C5.8052 15.7744 8.19679 17.5392 11.0006 17.5392C12.2057 17.5392 13.3348 17.2134 14.3036 16.6447L17.8865 19.5778Z"
+                                    fill="#28B446"></path>
+                                <path
+                                    d="M18.0208 2.53241L14.4573 5.44981C13.4546 4.82307 12.2694 4.46102 10.9996 4.46102C8.13229 4.46102 5.69596 6.30682 4.81356 8.87494L1.23009 5.9412H1.22949C3.06022 2.41154 6.74823 0 10.9996 0C13.6686 0 16.1158 0.950726 18.0208 2.53241Z"
+                                    fill="#F14336"></path>
+                            </svg>&nbsp;&nbsp;
+                            Continue With Google
+                        </li>
+                    </ul>
+                </div>
+                <br><br>
+                <hr>
+                <br><br>
+                <div class="login_popup_footer">
+                    New To Zomoto ? &nbsp;<a href="#">Create Account</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="sign_up">
+        <div class="sign_nav">
+            <h3 class="sign_title">SignUp</h3>
+            <div class="close_sign_popup"><i class="bi bi-x-lg" style="font-weight: 800; font-size: 25px;"></i></div>
+        </div>
+        <div class="sign_form">
+            <input type="text" placeholder="Full Name"><br><br>
+            <input type="email" placeholder="Email">
+            <div class="descri">
+                <div class="div1">
+                    <input type="checkbox">
+                </div>
+                <div class="div2">
+                    i agree to zomoto's <a href="#">Terms Of Service. Privacy Policy</a> and
+                    <a href="#">Content Policies</a>
+                </div>
+            </div>
+            <br>
+            <button id="sign_btn">Create Account</button>
+            <br><br>
+            <div class="or_title">
+                <span></span>&nbsp;&nbsp;or&nbsp;&nbsp;<span></span>
+            </div>
+            <br><br>
+            <div class="social_btn">
+                <svg width="24" height="24" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4.87566 13.2946L4.10987 16.1534L1.31093 16.2126C0.474461 14.6611 0 12.886 0 10.9997C0 9.17565 0.443609 7.45552 1.22994 5.94092H1.23054L3.72238 6.39776L4.81396 8.87465C4.5855 9.54071 4.46097 10.2557 4.46097 10.9997C4.46106 11.8072 4.60732 12.5808 4.87566 13.2946Z"
+                        fill="#FBBB00"></path>
+                    <path
+                        d="M21.8082 8.94507C21.9345 9.61048 22.0004 10.2977 22.0004 11C22.0004 11.7875 21.9176 12.5557 21.7598 13.2967C21.2243 15.8183 19.8252 18.0201 17.8869 19.5782L17.8863 19.5776L14.7477 19.4175L14.3035 16.6445C15.5896 15.8902 16.5947 14.7098 17.1242 13.2967H11.2422V8.94507H17.21H21.8082Z"
+                        fill="#518EF8"></path>
+                    <path
+                        d="M17.8865 19.5778L17.8871 19.5784C16.002 21.0937 13.6073 22.0002 11.0006 22.0002C6.81152 22.0002 3.16945 19.6588 1.31152 16.2132L4.87625 13.2952C5.8052 15.7744 8.19679 17.5392 11.0006 17.5392C12.2057 17.5392 13.3348 17.2134 14.3036 16.6447L17.8865 19.5778Z"
+                        fill="#28B446"></path>
+                    <path
+                        d="M18.0208 2.53241L14.4573 5.44981C13.4546 4.82307 12.2694 4.46102 10.9996 4.46102C8.13229 4.46102 5.69596 6.30682 4.81356 8.87494L1.23009 5.9412H1.22949C3.06022 2.41154 6.74823 0 10.9996 0C13.6686 0 16.1158 0.950726 18.0208 2.53241Z"
+                        fill="#F14336"></path>
+                </svg>&nbsp;&nbsp;
+                Continue With Google
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="sign_foot">
+                Already have an account ?&nbsp;&nbsp; <a href="#">Login</a>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="hero">
+        <div class="hero_content">
+            <h3>Insipiration for your first order</h3>
+        </div>
+    </section>
+
+
+    <!-- Javascript File's Link's -->
+    <script src="main.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
