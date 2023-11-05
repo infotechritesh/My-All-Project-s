@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #345ff6;
+    --gunmetal: #253347;
+    --dark-electric-blue: #5e6e85;
+    --borders: #d8e2e7;
+    --white: #fff;
+}
+
+@font-face {
+    font-family: 'inter-regular';
+    src: url('./assets/fonts/static/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'inter-semibold';
+    src: url('./assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+}
+
+body {
+    background: #f3f3f3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    user-zoom: none;
+}
+
+nav {
+    display: flex;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background: var(--gunmetal);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    color: var(--white);
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    margin-left: 10%;
+}
+
+nav .logo img {
+    width: 50px;
+    height: 50px;
+    transform: scale(1.2);
+    object-fit: contain;
+}
+
+.null_bar {
+    display: flex;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background: var(--gunmetal);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    color: var(--white);
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* edit_functions Design */
+
+main {
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+
+main .edit_functions {
+    width: 30%;
+    height: 60vh;
+    border: 1px solid var(--blue);
+    height: 100vh;
+    position: relative;
+}
+.edit_functions .edit_nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: var(--borders);
+    position: relative;
+}
+.edit_functions .edit_nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+.edit_functions .edit_nav ul li {
+    display: flex;
+    font-size: 35px;
+    font-weight: inherit;
+    color: var(--gunmetal);
+    cursor: pointer;
+}
+.edit_functions .edit_nav ul li i {
+    font-size: 35px;
+    font-weight: 800;
+    color: red;
+}
+.edit_functions .funtions {
+    padding: 10px;
+}
+.edit_functions .funtions ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+}
+.edit_functions .funtions ul li {
+    list-style: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--gunmetal);
+    border: 1px solid var(--borders);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+}
+#close_edit_bar {
+    margin-left: 250%;
+}
+.edit_functions ul li{ 
+    border-radius: 5px;
+    margin-top: 2%;
+}
+.edit_functions .amizing_shape {
+    padding: 10px;
+    transform: translate(-100%, 0%);
+    transition: all ease 0.2s;
+}
+.edit_functions .amizing_shape ul {
+    display: inline-block;
+}
+.functions_borderRadius {
+    padding: 10px;
+}
+.amizing_shape h3 {
+    padding: 10px;
+    color: var(--gunmetal);
+    font-size: 25px;
+}
+.functions_borderRadius ul{
+    padding: 10px;
+    display: inline-block;
+}
+.functions_borderRadius ul li {
+    list-style: none;
+    padding: 10px;
+    border: 2px solid var(--borders);
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    width: 400px;
+}
+
+
+
+main .output_bar {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.output_bar .output_note_page {
+    width: 700px;
+    height: 550px;
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.output_bar .output_note_page .box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid var(--gunmetal);
+    transition: all ease 0.5s;
+}

@@ -1,0 +1,19 @@
+@media (max-width: 420px) {
+
+    main .edit_functions {
+        width: 30%;
+        height: 60vh;
+        border: 1px solid var(--blue);
+        height: 100vh;
+        transform: translate(-200%, 0%);
+    }
+
+    #close_edit_bar {
+        margin-left: 100%;
+    }
+    .edit_functions .amizing_shape {
+        padding: 10px;
+        transform: translate(-200%, 0%);
+        transition: all ease 0.2s;
+    }
+}

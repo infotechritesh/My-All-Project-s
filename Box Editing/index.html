@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Box Editing Web App </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Media Screen Size Css Files -->
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://static.canva.com/web/images/12487a1e0770d29351bd4ce4f87ec8fe.svg" alt="">
+        </div>
+        <div class="menu_btn">
+            <i class="bi bi-list" style="font-size: 25px; font-weight: 600;  position: relative; right: 50%;"></i>
+        </div>
+    </nav>
+
+    <!-- Null Bar -->
+    <div class="null_bar"></div>
+    <br><br><br>
+
+    <!-- Main Contain -->
+    <main>
+        <!-- Edit Functionality -->
+        <div class="edit_functions">
+            <div class="edit_nav">
+                <ul>
+                    <li id="edit_title">Select</li>
+                    <li id="close_edit_bar"><i class="bi bi-x"></i></li>
+                </ul>
+            </div>
+            <div class="funtions">
+                <ul>
+                    <li id="boradi">Border Radius</li>
+                    <li id="width">Width</li>
+                    <li id="height">Height</li>
+                    <li id="color">Color</li>
+                    <li id="border" onclick="boxBorder()">Border</li>
+                    <li id="bg">Background</li>
+                </ul>
+            </div>
+
+            <div class="functions_borderRadius" id="func_Br">
+                <div class="amizing_shape">
+                    <div class="amazing_shape_nav"
+                        style="display: flex; align-items: center; justify-content: space-between;">
+                        <h3>Border Radius</h3>
+                        <i class="bi bi-arrow-left"
+                            style="font-size: 20px; font-weight: 800; margin-right: 20px; cursor: pointer;"
+                            id="border_radius_back_btn"></i>
+                    </div>
+                    <ul>
+                        <li id="circle"> Circle </li>
+                        <li id="squere"> Squere Root </li>
+                        <li id="magic_1">Magic 1</li>
+                        <li id="magic_2">Magic 2</li>
+                        <li id="magic_3">Magic 3</li>
+                        <li id="magic_4">Magic 4</li>
+                        <li id="magic_5">magic 5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Output Bar -->
+        <div class="output_bar">
+            <div class="output_note_page">
+                <div class="box" id="box"></div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Javascript Magic Files -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
